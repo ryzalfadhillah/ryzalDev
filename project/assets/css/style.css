@@ -301,6 +301,7 @@ footer a{
 
     header{
         justify-content: left;
+        height: 3em;
     }
 
     header a{
@@ -309,7 +310,7 @@ footer a{
 
     .hero-section{
         flex-direction: column;
-        padding: 1em;
+        padding: 3em 1em 2em 1em;
     }
 
     .hero-section-right{
