@@ -1,0 +1,2 @@
+# ryzalDev
+for personal web
