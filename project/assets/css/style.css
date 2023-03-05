@@ -30,16 +30,19 @@ header{
     flex-direction: row;
     justify-content: center;
     align-items: center;
+    position: fixed;
+    width: 100%;
+    background-color: #13FF00;
 }
 
 header a{
     text-decoration: none;
-    color: #ffffff;
+    color: #1D1D1D;
     padding: 1.5em
 }
 
 header a:hover{
-    color: #13FF00;
+    transform: scale(1.2);
 }
 
 .hero-section{
@@ -47,7 +50,7 @@ header a:hover{
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    padding: 3rem;
+    padding: 6em 3em 3em 3em;
 }
 
 .hero-section h1{
@@ -106,7 +109,7 @@ header a:hover{
 .about-me{
     background-color: #1D1D1D;
     text-align: center;
-    padding: 2rem;
+    padding: 4em 2em;
 }
 
 .education{
@@ -118,8 +121,9 @@ header a:hover{
 .education-list{
     display: flex;
     flex-direction: row;
-    justify-content: space-around;
+    justify-content: center;
     align-items: center;
+    gap: 6em;
 }
 
 .education-years{
@@ -138,7 +142,7 @@ header a:hover{
 .projects{
     text-align: center;
     background-color: #1D1D1D;
-    padding: 3em;
+    padding:6em 3em;
 }
 
 .project-list{
@@ -146,6 +150,7 @@ header a:hover{
     flex-direction: row;
     justify-content: space-around;
     align-items: center;
+    gap: 1em;
 }
 
 .card {
@@ -189,15 +194,15 @@ header a:hover{
 }
 
 .contact{
-    padding: 3em;
+    padding: 6em 3em;
 }
 
 .contact-group{
     border-radius: 3em;
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
+    justify-content: space-around;
+    align-items: start;
     background-color: #272727;
     padding: 3em;
 }
@@ -206,6 +211,11 @@ header a:hover{
     background-color: #4e4e4e;
     padding: 3em;
     border-radius: 3em 0 0 3em;
+    width: 40%;
+}
+
+.contact-group-right{
+    width: 60%;
 }
 
 .icon{
@@ -288,14 +298,30 @@ footer a{
 }
 
 @media screen and (max-width: 600px){
+
+    header{
+        justify-content: left;
+    }
+
+    header a{
+        padding: 0.5em
+    }
+
     .hero-section{
         flex-direction: column;
         padding: 1em;
     }
 
+    .hero-section-right{
+        display: none;
+    }
+
+    .hero-section-left{
+        width: 100%;
+    }
+
     .project-list{
         flex-direction: column;
-        gap: 1em;
     }
 
     .contact-group{
@@ -305,8 +331,9 @@ footer a{
 
     .contact-group-left{
         background-color: #4e4e4e;
-        padding: 3em;
-        border-radius: 3em ;
+        padding: 1em;
+        border-radius: 1em ;
+        width: 100%;
     }
 
     .information {
